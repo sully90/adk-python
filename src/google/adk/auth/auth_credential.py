@@ -80,6 +80,7 @@ class OAuth2Auth(BaseModelWithConfig):
   expires_at: Optional[int] = None
   expires_in: Optional[int] = None
   audience: Optional[str] = None
+  token_endpoint_auth_method: Optional[str] = "client_secret_basic"
 
 
 class ServiceAccountCredential(BaseModelWithConfig):
