@@ -153,7 +153,7 @@ class TestOAuth2CredentialUtil:
     assert client.token_endpoint_auth_method == "client_secret_post"
 
   def test_create_oauth2_session_with_default_token_endpoint_auth_method(self):
-    """Test create_oauth2_session with default token_endpoint_auth_method (None)."""
+    """Test create_oauth2_session with default token_endpoint_auth_method."""
     scheme = OpenIdConnectWithConfig(
         type_="openIdConnect",
         openId_connect_url=(
